@@ -9,7 +9,7 @@ async def on_ready():
  
 async def react(message):
     custom_emojis = [                  
-    "<:CheckMark:955438831233024040>"
+    "<:CheckMark:955457250393194568>"
     ]
     guild_emoji_names = [str(guild_emoji) for guild_emoji in message.guild.emojis]
     for emoji in custom_emojis:
@@ -18,7 +18,7 @@ async def react(message):
  
 @bot.event                                             
 async def on_message(message):
-    if message.channel.id == 700767482440319058:                
+    if message.channel.id == 710074884868538429:                
       await react(message)
 
 bot.run(os.environ['TOKEN']) 
