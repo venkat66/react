@@ -18,7 +18,7 @@ async def react(message):
  
 @bot.event                                             
 async def on_message(message):
-    if message.channel.id == 710074884868538429:                
+    if message.channel.id == 669491331365732352:                
       await react(message)
 
 bot.run(os.environ['TOKEN']) 
